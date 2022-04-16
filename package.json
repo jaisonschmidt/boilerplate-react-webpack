@@ -1,0 +1,9 @@
+{
+  "name": "boilerplate-react-webpack",
+  "version": "1.0.0",
+  "description": "My boilerplate created from scratch using webpack as a bundle generator",
+  "main": "src/index.js",
+  "repository": "https://github.com/jaisonschmidt/boilerplate-react-webpack.git",
+  "author": "Jaison Schmidt",
+  "license": "MIT"
+}
