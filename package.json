@@ -6,6 +6,10 @@
   "repository": "https://github.com/jaisonschmidt/boilerplate-react-webpack.git",
   "author": "Jaison Schmidt",
   "license": "MIT",
+  "scripts": {
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "devDependencies": {
     "@babel/core": "^7.17.9",
     "@babel/preset-env": "^7.16.11",
