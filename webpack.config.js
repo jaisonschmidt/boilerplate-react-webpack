@@ -1,7 +1,7 @@
 const path = require("path");
 
 module.exports = {
-  mode: "production",
+  mode: "development",
   entry: "./src/index.js",
   output: {
     path: path.join(__dirname, "dist"),
@@ -14,7 +14,7 @@ module.exports = {
         loader: "babel-loader",
         exclude: /node_modules/,
         options: {
-          presets: ["@babel/preset-env"],
+          presets: ["@babel/preset-env", "@babel/preset-react"],
         },
       },
     ],
