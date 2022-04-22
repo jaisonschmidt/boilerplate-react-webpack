@@ -7,4 +7,13 @@ module.exports = merge(baseConfig, {
     port: 3001,
   },
   devtool: "source-map",
+  module: {
+    rules: [
+      {
+        test: /\.(scss|css)$/,
+        use: ["style-loader", "css-loader", "sass-loader"],
+        exclude: /node_modules/,
+      },
+    ],
+  },
 });
