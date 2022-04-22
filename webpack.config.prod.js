@@ -14,4 +14,8 @@ module.exports = merge(baseConfig, {
     ],
   },
   plugins: [new MiniCssExtractPlugin()],
+  externals: {
+    react: "React",
+    "react-dom": "ReactDOM",
+  },
 });
