@@ -1,5 +1,8 @@
 const { merge } = require('webpack-merge')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const BundleAnalyzerPlugin =
+  require('webpack-bundle-analyzer').BundleAnalyzerPlugin
+
 const baseConfig = require('./webpack.config.base')
 
 module.exports = merge(baseConfig, {
@@ -13,7 +16,14 @@ module.exports = merge(baseConfig, {
       },
     ],
   },
-  plugins: [new MiniCssExtractPlugin()],
+  plugins: [
+    new MiniCssExtractPlugin(),
+    new BundleAnalyzerPlugin({
+      analyzerMode: 'static',
+      openAnalyzer: false,
+      reportFilename: 'bundle_sizes.html',
+    }),
+  ],
   externals: {
     react: 'React',
     'react-dom': 'ReactDOM',
