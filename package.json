@@ -12,8 +12,7 @@
     "test": "jest",
     "format": "pretty-quick",
     "format:stagged": "pretty-quick --staged",
-    "lint": "eslint ./",
-    "prepare": "husky install"
+    "lint": "eslint ./"
   },
   "devDependencies": {
     "@babel/core": "^7.17.9",
@@ -21,8 +20,6 @@
     "@babel/preset-react": "^7.16.7",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",
-    "@typescript-eslint/eslint-plugin": "^5.20.0",
-    "@typescript-eslint/parser": "^5.20.0",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.4",
     "css-loader": "^6.7.1",
@@ -45,6 +42,7 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
+    "@babel/eslint-parser": "^7.17.0",
     "prop-types": "^15.8.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
