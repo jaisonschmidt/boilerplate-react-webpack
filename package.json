@@ -15,7 +15,9 @@
     "lint": "eslint ./"
   },
   "devDependencies": {
+    "@axe-core/react": "^4.4.2",
     "@babel/core": "^7.17.9",
+    "@babel/eslint-parser": "^7.17.0",
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-react": "^7.16.7",
     "@testing-library/jest-dom": "^5.16.4",
@@ -42,7 +44,6 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
-    "@babel/eslint-parser": "^7.17.0",
     "prop-types": "^15.8.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
